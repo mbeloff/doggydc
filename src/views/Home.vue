@@ -1,24 +1,32 @@
 <template>
-  <div class="home d-flex align-items-center position-relative">
-    <div class="doge position-absolute"></div>
+  <div class="home d-flex align-items-center">
+    <div class="image-wrapper position-fixed">
+      <div class="doge position-absolute"></div>
+      <div class="doge2 position-absolute"></div>
+    </div>
 
-    <div class="mx-auto" style="z-index:1000">
+    <div class="container" style="z-index:1000">
       <h1 class="my-5">
         <span class="title">Gabba</span><br />
         <span class="title">Doggy</span><br />
         <span class="title">Daycare</span>
       </h1>
+
+      <div class="col-12 col-sm-8 col-md-6 col-lg-5 mx-auto mb-5 text">
+        <p>Coming Soon...<br />Leave your details and we'll keep you updated</p>
+      </div>
+
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-6 mx-auto">
             <div v-if="submitted">
-              <h2>thanks for your interest, we'll keep you updated</h2>
+              <h2>thanks for your interest, we'll keep you updated :)</h2>
             </div>
             <form
               name="DoggyDaycareEnquiry"
               method="post"
               id="DoggyDaycareEnquiry"
-              action="/success"
+              action="/"
               @submit.prevent="handleSubmit"
               v-if="!submitted"
             >
@@ -92,7 +100,7 @@
                   <textarea
                     class="form-control"
                     rows="4"
-                    placeholder="Hi, I would like to know..."
+                    placeholder="Hey, I was wondering..."
                     aria-label="Questions/Comments"
                     name="question"
                     required
@@ -101,7 +109,7 @@
                   ><i class="form-icon fal fa-comment-alt-lines"></i>
                 </div>
               </div>
-              <div class="text-left mt-4">
+              <div class="text-center mt-4">
                 <button
                   type="submit"
                   class="btn btn-lg btn-cs"
@@ -159,7 +167,7 @@ export default {
           // console.log('success')
         })
         .catch(() => {
-          this.$router.push("404");
+          // this.$router.push("404");
           // console.log('failure')
         });
     }
@@ -170,14 +178,33 @@ export default {
 .home {
   width: 100vw;
   min-height: 100vh;
-  background: #edb506;
+  background: #ffbf10;
+  background-image: linear-gradient(to bottom, rgb(255, 196, 0), orange);
+}
+
+.image-wrapper {
+  height: 100vh;
+  width: 100vw;
+  bottom: 0;
 }
 
 .doge {
   height: 100%;
   max-height: 1000px;
   width: 50vw;
-  background-image: url("../assets/doge.jpg");
+  background-image: url("../assets/doge-sm.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  left: 0;
+  bottom: 0;
+}
+
+.doge2 {
+  height: 100%;
+  max-height: 1000px;
+  width: 50vw;
+  background-image: url("../assets/doge2-sm.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -185,17 +212,26 @@ export default {
   bottom: 0;
 }
 
+.form * {
+  font-family: "Robot Mono";
+}
+
+.form-group {
+  margin-bottom: 0.4rem !important;
+}
+
 input.form-control,
 textarea.form-control {
+  height: 2.5rem;
   font-size: 1.75rem;
-  background: rgba(255, 255, 255, 0.199);
+  background: rgba(255, 206, 149, 0.637);
   border: 1px solid transparent;
-  border-bottom: 1px solid white;
-  font-variation-settings: "wght" 400;
-  color: rgb(32, 30, 30);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.267);
+  font-variation-settings: "wght" 450;
+  color: rgb(0, 0, 0);
   &::placeholder {
-    color: rgb(104, 92, 92);
-    font-variation-settings: "wght" 300;
+    color: rgba(0, 0, 0, 0.486);
+    font-variation-settings: "wght" 400;
   }
 }
 
@@ -221,8 +257,16 @@ h1 {
 .btn.btn-cs {
   background: white;
   box-shadow: 2px 4px rgb(85, 187, 255);
+  margin-bottom: 4rem;
   p {
     text-shadow: 1px 1px rgb(98, 184, 255) !important;
   }
+}
+
+.text {
+  font-family: Roboto;
+  color: white;
+  font-size: 1.3rem;
+  font-variation-settings: "wght" 600;
 }
 </style>
