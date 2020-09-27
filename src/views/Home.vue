@@ -49,7 +49,6 @@
                     ref="name"
                     v-model="enquire.name"
                   />
-                  <i class="form-icon fal fa-user"></i>
                 </div>
 
                 <div
@@ -68,7 +67,7 @@
                     name="number"
                     v-model="enquire.number"
                     required
-                  /><i class="form-icon fal fa-phone-rotary"></i>
+                  />
                 </div>
 
                 <div
@@ -86,7 +85,7 @@
                     aria-label="Your email address"
                     name="email"
                     v-model="enquire.email"
-                  /><i class="form-icon fal fa-envelope"></i>
+                  />
                 </div>
 
                 <div
@@ -105,8 +104,7 @@
                     name="question"
                     required
                     v-model="enquire.question"
-                  ></textarea
-                  ><i class="form-icon fal fa-comment-alt-lines"></i>
+                  ></textarea>
                 </div>
               </div>
               <div class="text-center mt-4">
@@ -116,7 +114,7 @@
                   aria-label="Submit"
                 >
                   <p class="mb-0">
-                    <i class="fa fa-paper-plane mr-1 d-inline"></i> Submit
+                    <i class="fa fa-paper-plane mr-1 d-inline"></i> Send
                   </p>
                 </button>
               </div>
@@ -222,7 +220,6 @@ export default {
 
 input.form-control,
 textarea.form-control {
-  height: 2.5rem;
   font-size: 1.75rem;
   background: rgba(255, 206, 149, 0.637);
   border: 1px solid transparent;
@@ -233,10 +230,6 @@ textarea.form-control {
     color: rgba(0, 0, 0, 0.486);
     font-variation-settings: "wght" 400;
   }
-}
-
-text-area.form-control {
-  height: auto !important;
 }
 
 input.form-control:-internal-autofill-selected {
@@ -259,9 +252,18 @@ h1 {
 }
 
 .btn.btn-cs {
-  background: white;
-  box-shadow: 2px 4px rgb(85, 187, 255);
+  // font-family: "encode sans";
+  font-size: 1.5rem;
+  background: rgb(109, 221, 255);
+  color: rgb(244, 250, 255);
+  box-shadow: 0px 4px rgb(85, 187, 255);
+  // text-transform: uppercase;
   margin-bottom: 4rem;
+  padding: 0.75rem 2.5rem;
+  &:hover {
+    color: rgb(109, 221, 255);
+    background: white;
+  }
   p {
     text-shadow: 1px 1px rgb(98, 184, 255) !important;
   }
