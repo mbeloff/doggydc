@@ -235,6 +235,10 @@ textarea.form-control {
   }
 }
 
+text-area.form-control {
+  height: auto !important;
+}
+
 input.form-control:-internal-autofill-selected {
   appearance: menulist-button;
   background-color: rgba(232, 240, 254, 0.322) !important;
