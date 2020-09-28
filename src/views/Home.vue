@@ -6,14 +6,21 @@
     </div>
 
     <div class="container" style="z-index:1000">
-      <h1 class="my-5">
+      <!-- <h1 class="my-5">
         <span class="title">Gabba</span><br />
         <span class="title">Doggy</span><br />
         <span class="title">Daycare</span>
-      </h1>
+      </h1> -->
+      <div class="col-12 col-md-4 mx-auto">
+        <img
+          class="logo w-100 my-4"
+          src="../assets/gddc-coming-soon.svg"
+          alt=""
+        />
+      </div>
 
       <div class="col-12 col-sm-8 col-md-6 col-lg-5 mx-auto mb-5 text">
-        <p>Coming Soon...<br />Leave your details and we'll keep you updated</p>
+        <p>Leave your details and we'll keep you updated</p>
       </div>
 
       <div class="container">
@@ -254,18 +261,18 @@ h1 {
 .btn.btn-cs {
   // font-family: "encode sans";
   font-size: 1.5rem;
-  background: rgb(109, 221, 255);
+  background: rgb(54, 208, 255);
   color: rgb(244, 250, 255);
-  box-shadow: 0px 4px rgb(85, 187, 255);
+  box-shadow: 0px 4px rgb(33, 155, 236);
   // text-transform: uppercase;
   margin-bottom: 4rem;
   padding: 0.75rem 2.5rem;
   &:hover {
-    color: rgb(109, 221, 255);
+    color: rgb(54, 208, 255);
     background: white;
   }
   p {
-    text-shadow: 1px 1px rgb(98, 184, 255) !important;
+    text-shadow: 1px 1px rgb(33, 155, 236) !important;
   }
 }
 
