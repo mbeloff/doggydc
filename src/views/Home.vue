@@ -261,18 +261,18 @@ h1 {
 .btn.btn-cs {
   // font-family: "encode sans";
   font-size: 1.5rem;
-  background: rgb(54, 208, 255);
-  color: rgb(244, 250, 255);
-  box-shadow: 0px 4px rgb(33, 155, 236);
+  background: #27aae1;
+  color: rgb(255, 255, 255);
+  box-shadow: 0px 4px rgb(11, 116, 187);
   // text-transform: uppercase;
   margin-bottom: 4rem;
   padding: 0.75rem 2.5rem;
   &:hover {
-    color: rgb(54, 208, 255);
+    color: #27aae1;
     background: white;
   }
   p {
-    text-shadow: 1px 1px rgb(33, 155, 236) !important;
+    text-shadow: 1px 1px rgb(11, 116, 187) !important;
   }
 }
 
