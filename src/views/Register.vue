@@ -34,14 +34,7 @@
               v-if="!submitted"
             >
               <div class="row">
-                <div
-                  class="col-md-12 form-group"
-                  data-aos="flip-up"
-                  data-aos-easing="ease-in-out"
-                  data-aos-duration="1000"
-                  data-aos-delay="0"
-                  data-aos-offset="0"
-                >
+                <div class="col-md-12 form-group">
                   <input
                     class="form-control"
                     type="text"
@@ -54,14 +47,7 @@
                   />
                 </div>
 
-                <div
-                  class="col-md-12 form-group"
-                  data-aos="flip-up"
-                  data-aos-easing="ease-in-out"
-                  data-aos-duration="1000"
-                  data-aos-delay="100"
-                  data-aos-offset="0"
-                >
+                <div class="col-md-12 form-group">
                   <input
                     class="form-control"
                     type="tel"
@@ -73,14 +59,7 @@
                   />
                 </div>
 
-                <div
-                  class="col-md-12 form-group"
-                  data-aos="flip-up"
-                  data-aos-easing="ease-in-out"
-                  data-aos-duration="1000"
-                  data-aos-delay="200"
-                  data-aos-offset="0"
-                >
+                <div class="col-md-12 form-group">
                   <input
                     class="form-control"
                     type="email"
@@ -91,14 +70,7 @@
                   />
                 </div>
 
-                <div
-                  class="col-md-12 form-group g-mb-40"
-                  data-aos="flip-up"
-                  data-aos-easing="ease-in-out"
-                  data-aos-duration="1000"
-                  data-aos-delay="300"
-                  data-aos-offset="0"
-                >
+                <div class="col-md-12 form-group g-mb-40">
                   <textarea
                     class="form-control"
                     rows="4"
